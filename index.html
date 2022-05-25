@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<body bgcolor = "grey">
+		<h1 style = "background-color:red; color:white; text-align:center;">Anna University REG 21 Mark Calculator</h1>
+
+		<style>
+		.textbox{
+		margin: 0 auto;
+		display: block;
+		}
+		div{
+text-align:center;
+		}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #B53749;
+   color: white;
+   text-align: center;
+}
+		</style>
+		<div>
+		Enter your internal marks for 40: <br>
+		<input type="text" class="textbox" id="internal">
+		<br>
+		Enter your external marks for 100: <br>
+		<input type="text" class="textbox" id="external">
+		<br>
+		Result:<br>
+		<input type="text" class="textbox" id="result">
+		<br>
+		<input type="button" value="Enter" onclick="result()">
+		</div>
+
+		<script>
+
+			function result(){
+                var internal = parseInt(document.getElementById("internal").value);
+                var external = parseInt(document.getElementById("external").value);
+
+		external = external * 0.6;
+
+var result
+
+                var sum = internal + external;
+
+							if(sum >= 45){
+											result = "Pass";
+										}
+							else
+							{
+											result = "Fail";
+										}
+                document.getElementById("result").value = result;
+										}
+		</script>
+
+		<div class = "footer">
+			<p> zenmarz <br> </p> the software is copyrighted by under GPL </p> <br> <p> 2022-2023 </p>
+		</div>
+	</body>
+</html>
